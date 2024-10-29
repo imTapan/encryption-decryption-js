@@ -1,6 +1,6 @@
 <template>Hello World</template>
 <script setup>
-import encryptionMethods from "./utils/enc.js";
+import encryptionMethods from "./utils/methods.js";
 
 const { easyEncryption } = encryptionMethods();
 const rawData = "#Rfui*&F^W763437ffdfew";
