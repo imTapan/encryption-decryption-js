@@ -36,7 +36,7 @@
       </p>
     </div>
 
-    <div class="input-group" v-if="encryptedData">
+    <div class="input-group" v-if="encryptedData" style="margin-top: 40px">
       <label for="decryptionKeyInput">Enter Decryption Key:</label>
       <input
         type="text"
@@ -98,3 +98,90 @@ function copyToClipboard(text) {
     });
 }
 </script>
+<style>
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  color: #0056b3;
+  text-align: center;
+}
+
+h2 {
+  color: #007bff;
+}
+
+h3 {
+  color: #555;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+textarea,
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Result Section */
+.result {
+  background-color: #e9f7fe; /* Light blue background for results */
+  border: 1px solid #b0e0ff; /* Light blue border */
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+}
+</style>
